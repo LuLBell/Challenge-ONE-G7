@@ -1,0 +1,222 @@
+*{
+    background-color: antiquewhite;
+    padding: 0;
+    margin:0;
+}
+body{
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: max-content;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+html,body{
+    height: 100%;
+}
+h1{
+    text-align: left;
+    font-size: 3rem;
+    color: burlywood;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.main{
+    display:flex;
+    flex-direction: row;
+    height: 750px;
+    padding: 15px;
+    justify-content: space-between;
+}
+.crypto{
+    align-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 65%;
+    padding: 10px;
+    height: max-content;
+}
+.aencriptar {
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 10px;
+}
+.txt{
+    width: 95%;
+    height: 400px;
+    font-size: 28px;
+    color: black;
+    border: none;
+    resize: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+.indicacion{
+    font-size: 16px;
+    color: grey;
+    margin-bottom: 20px;
+}
+button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+    width: 150px;
+}
+.Encriptar{
+    background-color: rgb(45, 45, 175);
+    color: aliceblue;
+
+}
+.Desencriptar{
+    color: rgb(45, 45, 175);
+    background-color: aliceblue;
+}
+.Copiar {
+    display: block;
+    margin: 20px auto 5% auto;
+}
+.EspacioEncriptado {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 75%;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+.SinEncriptar{
+    font-size: 1.5rem;
+    background-color: white;
+    height: 100%;
+}
+.ConEncriptar{
+    font-size: 1.5rem;
+    background-color: white;
+    height: fit-content;
+    max-height: auto;
+    text-align: center;
+    word-wrap: break-word; 
+    word-break: break-all;
+    width: 100%;
+    overflow-y: auto;
+}
+p.t1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: white;
+    padding: 5px;
+}
+p.t2{
+    font-size: 1rem;
+    background-color: white;
+    padding: 15px;
+}
+p.encriptacion{
+    background-color: white;
+    margin-bottom: 20px;
+    text-align: center; 
+    overflow-wrap: break-word;
+    white-space: normal;
+    margin: 50px;
+}
+.SinEncriptar img {
+    max-width: 100%; 
+    height: auto; 
+    max-height: 40%; 
+    border-radius: 8px;
+    margin-top: 130px;
+}
+.ConEncriptar img {
+    max-width: 100%;
+    height: auto;
+    max-height: 40%;
+    border-radius: 8px;
+    margin-top: 60px;
+}
+footer{
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    background-color:white;
+    padding: 10px;
+}
+.footer-text{
+    font-size: 3rem;
+    font-family: "Roboto", sans-serif;
+    color: black;
+}
+
+@media (max-width: 1200px) {
+    body{
+        height: max-content;
+        box-sizing: border-box;
+        overflow-y: scroll;
+    }
+
+    .h1{
+        display: flex;
+        text-align: center;
+    }
+    .main {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 20px;
+        height: auto;
+    }
+
+    .crypto {
+        width: 96%;
+        margin-right: 2%;
+    }
+    
+    .EspacioEncriptado {
+        width: 94%;
+        margin: 5% 0% 5% 3%
+    }
+
+    button{
+        width: 70%;
+    }
+
+    button.Copiar{
+        width: 70%;
+    }
+    
+    .SinEncriptar img {
+        margin-top: 8%;
+        width: 30%;
+    }
+
+    .ConEncriptar img {
+        margin-top: 8%;
+        width: 30%;
+    }
+
+    footer{
+        text-align: center;
+        width: 100%;
+        bottom: 0;
+        position: relative;
+        background-color:white;
+        padding: 20px;
+    }
+
+    .footer-text{
+        font-size: 3rem;
+        font-family: "Roboto", sans-serif;
+        color: black;
+    }
+}

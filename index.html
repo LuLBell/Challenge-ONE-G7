@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Encriptador de Textos</title>
+</head>
+<body>
+    <h1>Encriptador de Textos</h1>
+    <div class = "main">
+        <div class = "crypto">
+            <div class = "aencriptar">
+                <textarea class = "txt" name = "txt" id = "txt" placeholder="Ingresar texto"></textarea> 
+            </div>
+            <div class = "indicacion">
+                <p>Solo ingrese letras minúsculas y sin acentos</p>
+            </div>
+            <div class = "botones">
+                <button class = "Encriptar" type = "button" onclick="encriptar()">Encriptar</button>
+                <button class = "Desencriptar" type = "button" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <div class = "EspacioEncriptado">
+            <div class = "SinEncriptar">
+                <img src="assets/detective.png" alt id="detective"> 
+                <p class = "t1">Ningún mensaje fue encontrado</p>
+                <p class = "t2">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <div class = "ConEncriptar" hidden>
+                <p class = "encriptacion">awa</p>
+                <img src="assets/idea.png" alt id="idea">
+                <button class = "Copiar" type = "button" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </div>   
+    </div>
+    <footer>
+    Elaborado por avlucen
+    </footer>
+    <script src = "funtion.js"></script> 
+</body>
+</html>
